@@ -1,0 +1,8 @@
+//
+//  Model.swift
+//  Food_Journal_Mobile_App
+//
+//  Created by Billie H on 23/04/25.
+//
+
+import Foundation
