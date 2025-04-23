@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
+struct Item : Codable{
+    var photo : UIImage?{
+        get{
+            guard let data else{return nil}
+            return UIImage(data: data)
+        }
+        set{data = newValue?.pngData()}
+    }
+    var description : String
+    var data : Data?
+    enum CodingKeys: CodingKey {
+        case description
+        case data
+    }
+}
